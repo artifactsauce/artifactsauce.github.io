@@ -1,0 +1,33 @@
+---
+title: cpanmをMac OS Xにインストールする
+updated: 2010/10/30 23:14
+---
+
+<h3>概要</h3><br />
+YAPC::Asia 2010に参加してみると、何人もの講演者が「cpanmを使え」と唱えている。「cpanmを使わない理由はない」とまで言うので、cpanmをインストールしてみることにした。ちょうどいろいろあってOSを再インストールしたばかりだったため、割とクリーンな状態で実験できた。<br />
+<br />
+<h4>参考</h4><ul><li><a href="http://search.cpan.org/dist/App-cpanminus/">App::cpanminus</a></li>
+</ul><br />
+<h3>テスト環境</h3><ul><li>Mac OS X 10.6.4 (Snow Leopard)</li>
+<li>MacPorts 1.9.1</li>
+<li>perl v5.12.2</li>
+</ul><br />
+<h3>インストール</h3><br />
+<h4>必要なパッケージのインストール</h4>今回はMacPortsでインストールしたv5.12.2を使用しているが、<a href="http://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm">App::cpanminus</a>のページよると、perlのバージョンは5.8以降なら問題ないそうだ。<br />
+また、<a href="http://search.cpan.org/dist/App-cpanminus/lib/App/cpanminus.pm">App::cpanminus</a>のページの例ではファイル取得にcurlを使っているが、実際は何でもいいはずだ。wgetでも問題ないし、その旨も明記されているが、気分的に今回はとりあえずマニュアル合わせるためにcurlをインストールした。<br />
+<pre><samp>$ sudo port install perl5.12 curl</samp></pre><br />
+<h4>cpanmのインストール</h4>マニュアル通りにコマンドを実行してみる。<br />
+<pre>$ curl -L http://cpanmin.us | perl - --sudo App::cpanminus</pre>これでちゃんと /opt/local/lib/perl5/site_perl/5.12.2/ にインストールされているし、コマンドも /opt/local/bin/ にインストールされている。とても簡単。<br />
+<pre>$ perldoc -l cpanm
+/opt/local/bin/cpanm
+$ perldoc -l App::cpanminus
+/opt/local/lib/perl5/site_perl/5.12.2/App/cpanminus.pm
+$ which cpanm
+/opt/local/bin/cpanm</pre>インストールしたら、まずはcpanm自体をアップグレードする。しかし、そもそもこの手法なら最新版をインストールしたはずなのでこの時点でアップグレードされるはずもない。<br />
+<pre>$ sudo -H cpanm --self-upgrade
+App::cpanminus is up to date. (1.0015)</pre>最新版を追いかける必要はないが、せっかくだから今回は最新版をインストールした。2010.02にリリースされている新しいモジュールということもあり、現在も頻繁に更新されているそうなので、最新版を入れる利点も大きいと思う。ちなみにDebianやFreeBSDにはcpanmのパッケージが用意されているらしい。<br />
+<br />
+<h4>モジュールのインストール</h4>それでは試しにマニュアルに従ってモジュールをインストールしてみる。<br />
+<pre>$ sudo -H cpanm Task::Plack</pre>これも問題なくインストールされる。もちろんモジュール自身に問題があればインストールは成功しない。<br />
+今回は最も単純なCPANからのインストールだったが、他にもローカルファイルやWeb越しからインストールすることができる。詳しくは下記のコマンドで確認してほしい。<br />
+<pre>$ perldoc cpanm</pre>
