@@ -1,0 +1,50 @@
+---
+title: システム領域に複数のperl実行環境をインストールする
+updated: 2012-06-02 13:26
+---
+
+<h3>動機</h3>
+<p>複数のperlのWebアプリケーションを1つのサーバー中でホストしている人はどれくらいいるだろうか？僕はやっている。リソースが少ない場合はどうしてもこうなってしまうと僕は思う。1つのサーバーで複数のアプリケーションを運用しているのに、サービスをちょっとでも止めるとなじられる上、代替機も無いような人はそれなりに居ると思う。</p>
+<p>この環境の場合、perl実行環境を複数持ちたくなることがある。例えば、モジュールのアップデートやperl本体のアップグレードなど、実行環境に大きな変化がある場合に、トラブルがあればすぐ戻すことができるようになる。</p>
+<p>通常はインストールPATHを変更する方法や、全体をgitなどでバージョン管理してしまう方法などが考えられるが、今回はperlbrewを用いた方法を考えたい。</p>
+<h3>perlbrew</h3>
+<p>perlbrewは通常、個人のhomeディレクトリに複数バージョンのperlの実行環境を作成したい場合に用いられる。</p>
+<h4>参考</h4>
+<ul>
+<li><a href="http://blog.endeworks.jp/d-6/2010/08/perlbrew.html">perlbrew - D-6 [相変わらず根無し]</a></li>
+<li><a href="http://perlbrew.pl/">Perlbrew</a></li>
+<li><a href="http://search.cpan.org/dist/App-perlbrew/">劉康民 / App-perlbrew - search.cpan.org</a></li>
+</ul>
+<p>configure時にPATHを変更してインストールする方法と何が違うのかと言うと、用意されたshellスクリプトを実行するだけで環境変数がちょこちょこっと変わってperlのPATHがうまいこと変更されてしまうということ。手元のperlプログラムのshebangを<var>/usr/bin/env</var>にしている限り、これを変更する必要はない。</p>
+<h3>perlbrewのインストールPATHを変更する</h3>
+<p>デフォルトでperlbrewをインストールすると、<var>$HOME/perl5/perlbrew</var>というディレクトリを作って、そこにいろいろなファイルを配置する。しかし、<var>PERLBREW_ROOT</var>という環境変数を事前に設定しておくことで、任意のディレクトリにインストールすることも可能だ。これを応用して、みんな大好き<var>/usr/local</var>にインストールしてみる。</p>
+<div><script src="https://gist.github.com/2573393.js?file=install_perl.sh"></script></div>
+<p>
+<samp>[INFO] Success to install perl into /usr/local/perlbrew/perls/perl-5.14.2/bin/perl</samp>
+<br />
+みたいな表示があれば成功しているはずだ。</p>
+<p>ポイントは前述のとおり16行目の<var>PERLBREW_ROOT</var>の設定と、20行目の<var>bashrc</var>の読み込み、25行目の<var>perlbrew use</var>だ。<var>switch</var>は使わないようにしよう。</p>
+<p><var>/usr/local</var>にインストールする都合上、root権限で実行することを前提にしている。10-12行目はhomeディレクトリをNFSでマウントしている場合に必要になることがあるという僕の個人的な問題のためにある。</p>
+<h3>perlモジュールのインストール</h3>
+<p>
+この環境の問題はモジュールをインストールするのが面倒だということだ。そのためにshellスクリプトを作っておいた。</p>
+<div><script src="https://gist.github.com/2573393.js?file=install_pm.sh"></script></div>
+<div><script src="https://gist.github.com/2573393.js?file=pm_list.txt"></script></div>
+<p>ポイントは同様に14-16行目。21行目以降の部分でモジュールのインストールをしている。<var>pm_list.txt</var>というファイルにモジュール名を記載しておけば、順番にインストールしてくれるはずだ。この場合、<var>pm_list.txt</var>は<var>/var/tmp/build</var>に置いておこう。先頭に#を書いておけばコメントアウトもできる。ちなみに<var>cpanm</var>でインストールすることを前提にしている。</p>
+<h4>参考</h4>
+<ul>
+<li><a href="http://artifactsauce.blogspot.jp/2010/10/cpanmmac-os-x.html">ArtifactSauce: cpanmをMac OS Xにインストールする</a></li>
+<li><a href="http://search.cpan.org/dist/App-cpanminus/">Tatsuhiko Miyagawa / App-cpanminus - search.cpan.org</a></li>
+</ul>
+<h3>Webアプリケーションを起動する</h3>
+<p>それぞれのWebアプリケーションからperlbrewでインストールしたperlを使う場合には、起動スクリプトを作ってしまうのが一番楽だと思う。</p>
+<div><script src="https://gist.github.com/2573393.js?file=webapprc"></script></div>
+<div><script src="https://gist.github.com/2573393.js?file=myapp.sh"></script></div>
+<p>起動スクリプトはmyapp.shで、内部でwebapprcを読み込んでいる。myapp.shをいくつも作れば、複数のWebアプリケーションを起動するのは簡単だ。ポイントは同様にwebapprcの24-26行目になる。これはいくつかの起動スクリプトのサンプルをパクってまぜこぜにして出来上がったから、もはやオリジナルが何なのかさえわからない。ライセンスとかどうなるんだろう？</p>
+<p>環境依存の前提条件がいろいろあるからちょっと説明する。Web Application FrameworkにはCatalyst、Web ServerにはStarman、Super daemonにはServer::Starter、OSにはCentOS5、アプリケーションの起動には専用のユーザーwebappを使用している。PSGIアプリケーションだったら、多少の変更で対応できると思う。</p>
+<h3>まとめ</h3>
+<p>perlbrewを/usr/localにインストールするというレアな要望を実現してみた。今のところトラブルは起こっていない。これを応用すると<a href="https://plus.google.com/112707632660981144842/posts/GJHLSeytBD3">こういうこと</a>ができるようになった。</p>
+<h3>使用したファイルのリポジトリ</h3>
+<ul>
+<li><a href="https://gist.github.com/2573393">gist: 2573393</a></li>
+</ul>
