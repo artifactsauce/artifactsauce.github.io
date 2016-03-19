@@ -3,9 +3,11 @@ layout: page
 title: About
 ---
 
-## Biography
+## Profile
 
 Software Developer, Web Developer, Server Engineer, ex-Bioinformatician.
+
+## Social accounts
 
 - [Google+](https://plus.google.com/+KenjiAkiyama)
 - [Facebook](https://www.facebook.com/kenji.akiyama)
