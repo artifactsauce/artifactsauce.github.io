@@ -5,7 +5,10 @@ title: About
 
 ## Profile
 
-Software Developer, Web Developer, Server Engineer, ex-Bioinformatician.
+- Software Developer
+- Web Developer
+- Server Engineer
+- ex-Bioinformatician
 
 ## Social accounts
 
