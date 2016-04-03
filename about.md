@@ -22,3 +22,7 @@ title: About
 - [Speaker Deck](//speakerdeck.com/artifactsauce)
 - [Qiita](//qiita.com/artifactsauce)
 - [Hatena](//profile.hatena.ne.jp/artifactsauce/)
+
+## Publications
+
+- [Here](/publications)
