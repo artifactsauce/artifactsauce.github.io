@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Publications"
+title: Publications
 ---
 
-## Articles
+## Peer-reviewed papers
 
 - Akiyama K, Kurotani A, Iida K, Kuromori T, Shinozaki K, Sakurai T. RARGE II: an integrated phenotype database of Arabidopsis mutant traits using a controlled vocabulary. Plant Cell Physiol. 2014 Jan;55(1):e4. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/24272250)]
 - Sakurai T, Mochida K, Yoshida T, Akiyama K, Ishitani M, Seki M, Shinozaki K. Genome-wide discovery and information resource development of DNA polymorphisms in cassava. PLoS One. 2013 Sep 11;8(9):e74056. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/24040164)]
@@ -32,7 +32,7 @@ title: "Publications"
 - Seki M, Narusaka M, Ishida J, Nanjo T, Fujita M, Oono Y, Kamiya A, Nakajima M, Enju A, Sakurai T, Satou M, Akiyama K, Taji T, Yamaguchi-Shinozaki K, Carninci P, Kawai J, Hayashizaki Y, Shinozaki K. Monitoring the expression profiles of 7000 Arabidopsis genes under drought, cold and high-salinity stresses using a full-length cDNA microarray. Plant J. 2002 Aug;31(3):279-92. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/12164808)]
 - Seki M, Narusaka M, Kamiya A, Ishida J, Satou M, Sakurai T, Nakajima M, Enju A, Akiyama K, Oono Y, Muramatsu M, Hayashizaki Y, Kawai J, Carninci P, Itoh M, Ishii Y, Arakawa T, Shibata K, Shinagawa A, Shinozaki K. Functional annotation of a full-length Arabidopsis cDNA collection. Science. 2002 Apr 5;296(5565):141-5. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/11910074)]
 
-## Reviews (Japanese)
+## Reviews (in Japanese)
 
 - Seki M, Shinozaki K, Ishida J, Nakajima M, Enju A, Sakurai T, Satou M, Akiyama K, Iida K, Oono Y. [Arabidopsis functional genomics using full-length cDNAs]. Tanpakushitsu Kakusan Koso. 2003 Nov;48(14):1890-8. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/14619414)]
 - Sakurai T, Satou M, Akiyama K, Seki M, Shinozaki K. [Bioinformatics].T anpakushitsu Kakusan Koso. 2002 Sep;47(12 Suppl):1500-5. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/12357601)]

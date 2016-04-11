@@ -23,6 +23,6 @@ title: About
 - [Qiita](//qiita.com/artifactsauce)
 - [Hatena](//profile.hatena.ne.jp/artifactsauce/)
 
-## Publications
+## Misc.
 
-- [Here](/publications)
+- [Publications](/publications)
