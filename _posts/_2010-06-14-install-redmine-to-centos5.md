@@ -1,6 +1,6 @@
 ---
 title: RedmineをCentOS 5にインストールする
-updated: 2010-06-14 0:45
+updated: 2010-06-14 00:45:00
 ---
 
 ## 概要
