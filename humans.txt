@@ -1,0 +1,11 @@
+/* OWNER */
+
+Contact: artifactsauce+contact@gmail.com
+Twitter: @artifactsauce
+GitHub: @artifactsauce
+
+/* SITE */
+
+Last Updated: YYYY/MM/DD
+Software: Emacs, Atom, Jekyll
+Boilerplate: The Plain, http://heiswayi.github.io/the-plain.html
