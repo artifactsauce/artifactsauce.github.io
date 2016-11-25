@@ -26,6 +26,7 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-feed (0.7.2)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-sitemap (0.11.0)
@@ -67,8 +68,9 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-feed
   jekyll-sitemap
   jemoji
 
 BUNDLED WITH
-   1.13.1
+   1.13.6

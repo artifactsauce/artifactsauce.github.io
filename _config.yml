@@ -1,10 +1,12 @@
 # Site Info
-title:              "Kenji Akiyama"
+title:              "Kenji Akiyama's Blog"
 description:        "Software Developer, Web Developer, Server Engineer, ex-Bioinformatician."
+url:                "https://www.artifactsauce.info"
 google_verify:      z7WSt9rmDWQDbnAC3ZnPX--m6Ijw1QR29UrCvte7v8k
 google_analytics:   UA-403364-11
 
 # Author Info
+author:             "Kenji Akiyama"
 author_name:        "Kenji Akiyama"
 author_email:       artifactsauce@gmail.com
 author_gravatar:    91282e22a7b16331c49c8d47eafcac14
@@ -28,6 +30,7 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
 gems:
   - jekyll-sitemap
+  - jekyll-feed
   - jemoji
 
 compress_html:
