@@ -1,6 +1,6 @@
 ---
 title: クソアプリ実行プラットフォームとしてのBitBar
-updated: 2016-12-09 00:00:00
+updated: 2016-12-09 01:07:00+09:00
 ---
 
 この記事は [クソアプリ Advent Calendar 2016](http://qiita.com/advent-calendar/2016/kusoapp) の9日目の記事です。
