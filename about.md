@@ -26,3 +26,4 @@ title: About
 ## Misc.
 
 - [Publications](/publications)
+- [BitBar Plugins](https://getbitbar.com/contributors/artifactsauce)
