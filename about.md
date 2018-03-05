@@ -18,6 +18,7 @@ title: About
 - [GitHub](//github.com/artifactsauce)
 - [Speaker Deck](//speakerdeck.com/artifactsauce)
 - [Qiita](//qiita.com/artifactsauce)
+- [Issüs](//issus.me/artifactsauce)
 - [Hatena](//profile.hatena.ne.jp/artifactsauce/)
 - [Twitter](//twitter.com/artifactsauce)
 - [Instagram](//instagram.com/artifactsauce)
