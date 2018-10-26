@@ -24,4 +24,3 @@ hard_wrap:          false
 theme:              jekyll-theme-minimal
 include:            [  ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
-github:             [metadata]
