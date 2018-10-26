@@ -20,4 +20,5 @@ kramdown:
 
 # Other Params
 theme:              jekyll-theme-minimal
-exclude:            [ "LICENSE", "README.md", "vendor", "Gemfile", "Gemfile.lock" ]
+include:            [  ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
