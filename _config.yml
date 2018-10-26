@@ -4,11 +4,8 @@ description:        "A raw guy programmer, ex-bioinformatician."
 url:                "//www.artifactsauce.info"
 google_verify:      z7WSt9rmDWQDbnAC3ZnPX--m6Ijw1QR29UrCvte7v8k
 google_analytics:   UA-403364-11
-logo:               http://www.gravatar.com/avatar/91282e22a7b16331c49c8d47eafcac14?s=400
-show_downloads: false
-
-# Author Info
-twitter_username:   artifactsauce
+logo:               http://www.gravatar.com/avatar/91282e22a7b16331c49c8d47eafcac14
+show_downloads:     false
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -23,5 +20,4 @@ kramdown:
 
 # Other Params
 theme:              jekyll-theme-minimal
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
+exclude:            [ "LICENSE", "README.md", "vendor", "Gemfile", "Gemfile.lock" ]
