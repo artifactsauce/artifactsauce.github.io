@@ -17,8 +17,11 @@ highlighter:        rouge
 markdown:           kramdown
 kramdown:
     input:          GFM
+encoding:           UTF-8
+hard_wrap:          false
 
 # Other Params
 theme:              jekyll-theme-minimal
 include:            [  ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
+github:             [metadata]
