@@ -1,3 +1,7 @@
+---
+update: 2018-10-27T00:00:49+09:00
+---
+
 /* OWNER */
 
 Contact: artifactsauce+contact@gmail.com
@@ -6,6 +10,6 @@ GitHub: @artifactsauce
 
 /* SITE */
 
-Last Updated: YYYY/MM/DD
-Software: Emacs, Atom, Jekyll
-Boilerplate: The Plain, http://heiswayi.github.io/the-plain.html
+Last Updated: {{ page.update }}
+Software: Visual Studio Code, Cloud9, Jekyll
+Boilerplate: Minimal theme, https://github.com/pages-themes/minimal

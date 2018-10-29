@@ -1,13 +1,11 @@
 # Site Info
-title:              "Kenji Akiyama's Blog"
-description:        "A raw guy programmer, ex-Bioinformatician."
+title:              "Kenji Akiyama"
+description:        "A raw guy programmer, ex-bioinformatician."
 url:                "//www.artifactsauce.info"
 google_verify:      z7WSt9rmDWQDbnAC3ZnPX--m6Ijw1QR29UrCvte7v8k
 google_analytics:   UA-403364-11
-
-# Author Info
-gravatar_hash:      91282e22a7b16331c49c8d47eafcac14
-twitter_username:   artifactsauce
+logo:               http://www.gravatar.com/avatar/91282e22a7b16331c49c8d47eafcac14?s=270
+show_downloads:     false
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -19,35 +17,10 @@ highlighter:        rouge
 markdown:           kramdown
 kramdown:
     input:          GFM
-sass:
-    style:          :compressed
+encoding:           UTF-8
+hard_wrap:          false
 
 # Other Params
-include:            [ "robots.txt" ]
+theme:              jekyll-theme-minimal
+include:            [  ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
-gems:
-  - jekyll-sitemap
-  - jekyll-feed
-  - jemoji
-
-compress_html:
-    clippings:      all
-    ingore:
-        envs:       [ "test" ]
-
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
-  -
-    scope:
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      type:         "posts"
-    values:
-      layout:       "post"
