@@ -6,9 +6,6 @@ title: About
 ## Profile
 
 - Software Engineer
-    - Web Development
-    - DevOps
-    - Bioinformatics
 
 ## Social accounts
 
