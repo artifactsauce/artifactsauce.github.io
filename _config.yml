@@ -20,6 +20,6 @@ encoding:           UTF-8
 hard_wrap:          false
 
 # Other Params
-theme:              jekyll-athena
+remote_theme:       broccolini/athena
 include:            [  ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
