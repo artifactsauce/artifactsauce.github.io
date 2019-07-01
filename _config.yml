@@ -4,8 +4,9 @@ description:        "A raw guy programmer, ex-bioinformatician."
 url:                "//www.artifactsauce.info"
 google_verify:      z7WSt9rmDWQDbnAC3ZnPX--m6Ijw1QR29UrCvte7v8k
 google_analytics:   UA-403364-11
-logo:               https://www.gravatar.com/avatar/91282e22a7b16331c49c8d47eafcac14?s=270
-show_downloads:     false
+github_username:    artifactsauce
+github_repo:        artifactsauce.github.io
+social_username:    artifactsauce
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -15,12 +16,10 @@ timezone:           Asia/Tokyo
 # Site Build
 highlighter:        rouge
 markdown:           kramdown
-kramdown:
-    input:          GFM
 encoding:           UTF-8
 hard_wrap:          false
 
 # Other Params
-theme:              jekyll-theme-minimal
+theme:              jekyll-athena
 include:            [  ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
