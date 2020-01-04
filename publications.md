@@ -36,4 +36,4 @@ title: Publications
 ## Reviews (in Japanese)
 
 - Seki M, Shinozaki K, Ishida J, Nakajima M, Enju A, Sakurai T, Satou M, **Akiyama K**, Iida K, Oono Y. [Arabidopsis functional genomics using full-length cDNAs]. Tanpakushitsu Kakusan Koso. 2003 Nov;48(14):1890-8. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/14619414)]
-- Sakurai T, Satou M, **Akiyama K**, Seki M, Shinozaki K. [Bioinformatics].T anpakushitsu Kakusan Koso. 2002 Sep;47(12 Suppl):1500-5. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/12357601)]
+- Sakurai T, Satou M, **Akiyama K**, Seki M, Shinozaki K. [Bioinformatics]. Tanpakushitsu Kakusan Koso. 2002 Sep;47(12 Suppl):1500-5. [[PubMed](http://www.ncbi.nlm.nih.gov/pubmed/12357601)]
