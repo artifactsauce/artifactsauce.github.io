@@ -5,7 +5,7 @@ title: About
 
 ## Profile
 
-- Software Engineer
+- A raw guy programmer
 
 ## Social accounts
 
