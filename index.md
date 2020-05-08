@@ -12,7 +12,7 @@ layout: default
 - [Speaker Deck](//speakerdeck.com/artifactsauce)
 - [Qiita](//qiita.com/artifactsauce)
 - [Issüs](//issus.me/artifactsauce)
-- [Hatena](//profile.hatena.ne.jp/artifactsauce/)
+- [Hatena Blog](//artifactsauce.hatenablog.com/)
 - [Twitter](//twitter.com/artifactsauce)
 - [Instagram](//instagram.com/artifactsauce)
 - [Facebook](//www.facebook.com/kenji.akiyama)
