@@ -1,25 +1,25 @@
 # Site Info
-title:              "ArtifactSauce"
-description:        "A raw guy programmer, ex-bioinformatician."
-url:                "//www.artifactsauce.info"
-google_verify:      z7WSt9rmDWQDbnAC3ZnPX--m6Ijw1QR29UrCvte7v8k
-google_analytics:   UA-403364-11
-github_username:    artifactsauce
-github_repo:        artifactsauce.github.io
-social_username:    artifactsauce
+title: "ArtifactSauce"
+description: "A raw guy programmer, ex-bioinformatician."
+url: "//www.artifactsauce.info"
+google_verify: z7WSt9rmDWQDbnAC3ZnPX--m6Ijw1QR29UrCvte7v8k
+google_analytics: UA-403364-11
+github_username: artifactsauce
+github_repo: artifactsauce.github.io
+social_username: artifactsauce
 
 # Site Settings
-baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
-permalink:          /posts/:year/:month/:day/:title
-timezone:           Asia/Tokyo
+baseurl: "" # Base URL must end WITHOUT a slash, default: ""
+permalink: /posts/:year/:month/:day/:title
+timezone: Asia/Tokyo
 
 # Site Build
-highlighter:        rouge
-markdown:           kramdown
-encoding:           UTF-8
-hard_wrap:          false
+highlighter: rouge
+markdown: kramdown
+encoding: UTF-8
+hard_wrap: false
 
 # Other Params
-remote_theme:       broccolini/athena
-include:            [  ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock" ]
+theme: jekyll-theme-primer
+include: []
+exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "Gemfile.lock"]

@@ -1,5 +1,5 @@
 ---
-update: 2018-10-27T00:00:49+09:00
+update: 2020-05-09T02:25:00+09:00
 ---
 
 /* OWNER */
@@ -11,5 +11,5 @@ GitHub: @artifactsauce
 /* SITE */
 
 Last Updated: {{ page.update }}
-Software: Visual Studio Code, Cloud9, Jekyll
-Boilerplate: Minimal theme, https://github.com/pages-themes/minimal
+Software: Visual Studio Code, Jekyll
+Boilerplate: Primer theme, https://github.com/pages-themes/primer
