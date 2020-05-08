@@ -4,7 +4,7 @@ layout: default
 
 ## Profile
 
-- A raw guy programmer
+- A raw guy programmer.
 
 ## Social accounts
 
