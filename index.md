@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Profile
+## Biography
 
 - A raw guy programmer.
 
