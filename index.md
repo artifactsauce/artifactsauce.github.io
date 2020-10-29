@@ -17,6 +17,7 @@ title: Home
 - [Instagram](//instagram.com/artifactsauce)
 - [Facebook](//www.facebook.com/kenji.akiyama)
 - [LinkedIn](//www.linkedin.com/in/kenjiakiyama)
+- [note](//note.com/artifactsauce)
 
 ## Misc.
 
