@@ -12,7 +12,6 @@ title: Home
 - [GitHub](//github.com/artifactsauce)
 - [Speaker Deck](//speakerdeck.com/artifactsauce)
 - [Qiita](//qiita.com/artifactsauce)
-- [Issüs](//issus.me/artifactsauce)
 - [Hatena Blog](//artifactsauce.hatenablog.com/)
 - [Twitter](//twitter.com/artifactsauce)
 - [Instagram](//instagram.com/artifactsauce)
