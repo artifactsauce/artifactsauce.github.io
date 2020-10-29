@@ -21,4 +21,3 @@ layout: default
 ## Misc.
 
 - [Publications](/publications)
-- [BitBar Plugins](https://getbitbar.com/contributors/artifactsauce)
