@@ -7,7 +7,7 @@ title: Home
 
 - A raw guy programmer.
 
-## Social accounts
+## Profiles
 
 - [GitHub](//github.com/artifactsauce)
 - [Speaker Deck](//speakerdeck.com/artifactsauce)
@@ -18,7 +18,5 @@ title: Home
 - [Facebook](//www.facebook.com/kenji.akiyama)
 - [LinkedIn](//www.linkedin.com/in/kenjiakiyama)
 - [note](//note.com/artifactsauce)
-
-## Misc.
-
+- [Google Scolar](https://scholar.google.com/citations?user=Fy86tpsAAAAJ)
 - [Publications](/publications)
