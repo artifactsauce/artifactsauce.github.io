@@ -18,5 +18,5 @@ title: Home
 - [Facebook](//www.facebook.com/kenji.akiyama)
 - [LinkedIn](//www.linkedin.com/in/kenjiakiyama)
 - [note](//note.com/artifactsauce)
-- [Google Scolar](https://scholar.google.com/citations?user=Fy86tpsAAAAJ)
+- [Google Scholar](https://scholar.google.com/citations?user=Fy86tpsAAAAJ)
 - [Publications](/publications)
